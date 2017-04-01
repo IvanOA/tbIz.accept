@@ -44,7 +44,32 @@ class History: Object {
 
 class LoadData {
     static func loadCreditCards(){
-        let data = require('./Source')
-        let json = JSON(data: <#T##Data#>)
+        //let data = require("./cards_data.json")
+        //JSON(
+        do {
+        if let file = Bundle.main.url(forResource: "cards_data", withExtension: "json") {
+            let data = try Data(contentsOf: file)
+            let json = JSON(data: data)
+            for (_,subJson):(String, JSON) in json{
+                print(subJson["Card_Id"].stringValue)
+            }
+        }
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    static func loadProfiles(){
+
+        do {
+            if let file = Bundle.main.url(forResource: "users_data", withExtension: "json") {
+                let data = try Data(contentsOf: file)
+                let json = JSON(data: data)
+                for (_,subJson):(String, JSON) in json{
+                    print(subJson["Phone_Num"].stringValue)
+                }
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }

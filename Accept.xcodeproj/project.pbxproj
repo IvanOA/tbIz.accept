@@ -13,6 +13,8 @@
 		241DAF1F1E8F952900BD5E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241DAF1E1E8F952900BD5E65 /* Assets.xcassets */; };
 		241DAF221E8F952900BD5E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241DAF201E8F952900BD5E65 /* LaunchScreen.storyboard */; };
 		241DAF2A1E8FA1F300BD5E65 /* LoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DAF291E8FA1F300BD5E65 /* LoadData.swift */; };
+		241DAF2C1E8FEA7A00BD5E65 /* cards_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 241DAF2B1E8FEA7A00BD5E65 /* cards_data.json */; };
+		241DAF2E1E8FEDB000BD5E65 /* users_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 241DAF2D1E8FEDB000BD5E65 /* users_data.json */; };
 		2EB0A28748C1CECE9A99BE56 /* Pods_Accept.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9C7779084BCBF9D7E50ABD /* Pods_Accept.framework */; };
 		73DBE5EC1E8FAAEC00E9757E /* SaluteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBE5EB1E8FAAEC00E9757E /* SaluteViewController.swift */; };
 		73DBE5EE1E8FAC3100E9757E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBE5ED1E8FAC3100E9757E /* RegistrationViewController.swift */; };
@@ -28,6 +30,8 @@
 		241DAF211E8F952900BD5E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		241DAF231E8F952900BD5E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		241DAF291E8FA1F300BD5E65 /* LoadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadData.swift; sourceTree = "<group>"; };
+		241DAF2B1E8FEA7A00BD5E65 /* cards_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards_data.json; sourceTree = "<group>"; };
+		241DAF2D1E8FEDB000BD5E65 /* users_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users_data.json; sourceTree = "<group>"; };
 		4AE968E32D230326089BDF99 /* Pods-Accept.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accept.release.xcconfig"; path = "Pods/Target Support Files/Pods-Accept/Pods-Accept.release.xcconfig"; sourceTree = "<group>"; };
 		6F9C7779084BCBF9D7E50ABD /* Pods_Accept.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Accept.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DBE5EB1E8FAAEC00E9757E /* SaluteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaluteViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				73DBE5EB1E8FAAEC00E9757E /* SaluteViewController.swift */,
 				73DBE5ED1E8FAC3100E9757E /* RegistrationViewController.swift */,
 				73DBE5EF1E8FAC5900E9757E /* PasswordViewController.swift */,
+				241DAF2D1E8FEDB000BD5E65 /* users_data.json */,
+				241DAF2B1E8FEA7A00BD5E65 /* cards_data.json */,
 			);
 			path = Accept;
 			sourceTree = "<group>";
@@ -164,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				241DAF221E8F952900BD5E65 /* LaunchScreen.storyboard in Resources */,
+				241DAF2C1E8FEA7A00BD5E65 /* cards_data.json in Resources */,
 				241DAF1F1E8F952900BD5E65 /* Assets.xcassets in Resources */,
+				241DAF2E1E8FEDB000BD5E65 /* users_data.json in Resources */,
 				241DAF1D1E8F952900BD5E65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

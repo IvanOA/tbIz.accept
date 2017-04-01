@@ -18,7 +18,8 @@ class MainVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
-        
+        LoadData.loadCreditCards()
+        LoadData.loadProfiles()
     }
     
     override func didReceiveMemoryWarning() {
