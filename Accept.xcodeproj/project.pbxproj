@@ -13,6 +13,9 @@
 		241DAF1F1E8F952900BD5E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241DAF1E1E8F952900BD5E65 /* Assets.xcassets */; };
 		241DAF221E8F952900BD5E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241DAF201E8F952900BD5E65 /* LaunchScreen.storyboard */; };
 		2EB0A28748C1CECE9A99BE56 /* Pods_Accept.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9C7779084BCBF9D7E50ABD /* Pods_Accept.framework */; };
+		73DBE5E21E8F9B2600E9757E /* SaluteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBE5E11E8F9B2600E9757E /* SaluteViewController.swift */; };
+		73DBE5E41E8F9EA400E9757E /* IdentificationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBE5E31E8F9EA400E9757E /* IdentificationCode.swift */; };
+		73DBE5E61E8FA1DB00E9757E /* CardRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBE5E51E8FA1DB00E9757E /* CardRegistration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		241DAF231E8F952900BD5E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE968E32D230326089BDF99 /* Pods-Accept.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accept.release.xcconfig"; path = "Pods/Target Support Files/Pods-Accept/Pods-Accept.release.xcconfig"; sourceTree = "<group>"; };
 		6F9C7779084BCBF9D7E50ABD /* Pods_Accept.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Accept.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DBE5E11E8F9B2600E9757E /* SaluteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaluteViewController.swift; sourceTree = "<group>"; };
+		73DBE5E31E8F9EA400E9757E /* IdentificationCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentificationCode.swift; sourceTree = "<group>"; };
+		73DBE5E51E8FA1DB00E9757E /* CardRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardRegistration.swift; sourceTree = "<group>"; };
 		8090B42C87B77D9D70E7F4E6 /* Pods-Accept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Accept/Pods-Accept.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +73,9 @@
 				241DAF1E1E8F952900BD5E65 /* Assets.xcassets */,
 				241DAF201E8F952900BD5E65 /* LaunchScreen.storyboard */,
 				241DAF231E8F952900BD5E65 /* Info.plist */,
+				73DBE5E11E8F9B2600E9757E /* SaluteViewController.swift */,
+				73DBE5E31E8F9EA400E9757E /* IdentificationCode.swift */,
+				73DBE5E51E8FA1DB00E9757E /* CardRegistration.swift */,
 			);
 			path = Accept;
 			sourceTree = "<group>";
@@ -123,7 +132,6 @@
 				TargetAttributes = {
 					241DAF131E8F952900BD5E65 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = HPGLGM5TWM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -212,7 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DBE5E41E8F9EA400E9757E /* IdentificationCode.swift in Sources */,
 				241DAF1A1E8F952900BD5E65 /* ViewController.swift in Sources */,
+				73DBE5E21E8F9B2600E9757E /* SaluteViewController.swift in Sources */,
+				73DBE5E61E8FA1DB00E9757E /* CardRegistration.swift in Sources */,
 				241DAF181E8F952900BD5E65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,7 +350,7 @@
 			baseConfigurationReference = 8090B42C87B77D9D70E7F4E6 /* Pods-Accept.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HPGLGM5TWM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Accept/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -355,7 +366,7 @@
 			baseConfigurationReference = 4AE968E32D230326089BDF99 /* Pods-Accept.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HPGLGM5TWM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Accept/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -385,6 +396,7 @@
 				241DAF281E8F952900BD5E65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
