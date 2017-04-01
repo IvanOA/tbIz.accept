@@ -12,7 +12,7 @@ class RegistrationViewController: UIViewController {
 
     @IBOutlet weak var bt_confirm: UIButton!
    
-    
+    @IBOutlet weak var card_number: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
@@ -26,8 +26,11 @@ class RegistrationViewController: UIViewController {
     
 
     @IBAction func bt_confirm_Action(_ sender: UIButton) {
+        if(card_number.text != nil)
+        {
         performSegue(withIdentifier: "Registration", sender: self)
-    }
+        
+        }
     /*
     // MARK: - Navigation
 
@@ -38,4 +41,5 @@ class RegistrationViewController: UIViewController {
     }
     */
 
+}
 }
