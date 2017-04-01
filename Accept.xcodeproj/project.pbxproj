@@ -14,6 +14,9 @@
 		241DAF221E8F952900BD5E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241DAF201E8F952900BD5E65 /* LaunchScreen.storyboard */; };
 		241DAF2A1E8FA1F300BD5E65 /* LoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DAF291E8FA1F300BD5E65 /* LoadData.swift */; };
 		2EB0A28748C1CECE9A99BE56 /* Pods_Accept.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9C7779084BCBF9D7E50ABD /* Pods_Accept.framework */; };
+		73DBE5EC1E8FAAEC00E9757E /* SaluteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBE5EB1E8FAAEC00E9757E /* SaluteViewController.swift */; };
+		73DBE5EE1E8FAC3100E9757E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBE5ED1E8FAC3100E9757E /* RegistrationViewController.swift */; };
+		73DBE5F01E8FAC5900E9757E /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBE5EF1E8FAC5900E9757E /* PasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		241DAF291E8FA1F300BD5E65 /* LoadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadData.swift; sourceTree = "<group>"; };
 		4AE968E32D230326089BDF99 /* Pods-Accept.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accept.release.xcconfig"; path = "Pods/Target Support Files/Pods-Accept/Pods-Accept.release.xcconfig"; sourceTree = "<group>"; };
 		6F9C7779084BCBF9D7E50ABD /* Pods_Accept.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Accept.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DBE5EB1E8FAAEC00E9757E /* SaluteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaluteViewController.swift; sourceTree = "<group>"; };
+		73DBE5ED1E8FAC3100E9757E /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		73DBE5EF1E8FAC5900E9757E /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		8090B42C87B77D9D70E7F4E6 /* Pods-Accept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Accept/Pods-Accept.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +76,9 @@
 				241DAF1E1E8F952900BD5E65 /* Assets.xcassets */,
 				241DAF201E8F952900BD5E65 /* LaunchScreen.storyboard */,
 				241DAF231E8F952900BD5E65 /* Info.plist */,
+				73DBE5EB1E8FAAEC00E9757E /* SaluteViewController.swift */,
+				73DBE5ED1E8FAC3100E9757E /* RegistrationViewController.swift */,
+				73DBE5EF1E8FAC5900E9757E /* PasswordViewController.swift */,
 			);
 			path = Accept;
 			sourceTree = "<group>";
@@ -217,7 +226,10 @@
 			files = (
 				241DAF1A1E8F952900BD5E65 /* ViewController.swift in Sources */,
 				241DAF181E8F952900BD5E65 /* AppDelegate.swift in Sources */,
+				73DBE5EC1E8FAAEC00E9757E /* SaluteViewController.swift in Sources */,
 				241DAF2A1E8FA1F300BD5E65 /* LoadData.swift in Sources */,
+				73DBE5EE1E8FAC3100E9757E /* RegistrationViewController.swift in Sources */,
+				73DBE5F01E8FAC5900E9757E /* PasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
