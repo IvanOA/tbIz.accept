@@ -31,7 +31,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource{
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellPlace", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellContact", for: indexPath)
         
         return cell
     }
