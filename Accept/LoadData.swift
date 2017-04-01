@@ -11,7 +11,7 @@ import RealmSwift
 import SwiftyJSON
 
 class Profile:Object{
-    dynamic var id_profile: UInt32 = 0
+    dynamic var id_profile: String = ""
     dynamic var name: String = ""
     dynamic var surname: String = ""
     dynamic var phone_number: String = ""
@@ -20,7 +20,7 @@ class Profile:Object{
     }
 }
 class CreditCard:Object {
-    dynamic var id_card: UInt64 = 0
+    dynamic var id_card: String = ""
     dynamic var owner: String = ""
     dynamic var date: String = ""
     dynamic var CVC: Int = 0
@@ -32,7 +32,7 @@ class CreditCard:Object {
     }
 }
 class History: Object {
-    dynamic var id_event: UInt32 = 0
+    dynamic var id_event: String = ""
     dynamic var sent_card_id: CreditCard?
     dynamic var rec_card_id: CreditCard?
     dynamic var trust_sum: Float = 0
@@ -43,7 +43,7 @@ class History: Object {
 }
 
 class LoadData {
-    static func loadCreditCards(){
+    static func loadCreditCards(id_card: UInt64, CVC: Int){
         //let data = require("./cards_data.json")
         //JSON(
         do {
@@ -51,25 +51,43 @@ class LoadData {
             let data = try Data(contentsOf: file)
             let json = JSON(data: data)
             for (_,subJson):(String, JSON) in json{
-                print(subJson["Card_Id"].stringValue)
+                if id_card == UInt64(subJson["Card_Id"].stringValue){
+                    let owner = subJson["Name"].stringValue
+                    print("card is in database")
+                    print("Owner: \(owner)")
+                    if CVC == subJson[""].intValue {
+                        print("CVC is correct")
+                    }
+                    else{
+                        print("CVC is incorrect")
+                    }
+                    break
+                }
+                else{
+                   // print("card number is wrong")
+                }
             }
+            
         }
         } catch {
             print(error.localizedDescription)
         }
     }
-    static func loadProfiles(){
-
+    static func loadProfiles(phone: String) -> Bool{
         do {
             if let file = Bundle.main.url(forResource: "users_data", withExtension: "json") {
                 let data = try Data(contentsOf: file)
                 let json = JSON(data: data)
                 for (_,subJson):(String, JSON) in json{
-                    print(subJson["Phone_Num"].stringValue)
+                    if phone == subJson["Phone_Num"].stringValue {
+                        return true
+                    }
                 }
             }
         } catch {
             print(error.localizedDescription)
+            return false
         }
+        return false
     }
 }
