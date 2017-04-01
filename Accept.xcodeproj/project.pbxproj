@@ -12,6 +12,7 @@
 		241DAF1D1E8F952900BD5E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241DAF1B1E8F952900BD5E65 /* Main.storyboard */; };
 		241DAF1F1E8F952900BD5E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241DAF1E1E8F952900BD5E65 /* Assets.xcassets */; };
 		241DAF221E8F952900BD5E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241DAF201E8F952900BD5E65 /* LaunchScreen.storyboard */; };
+		2EB0A28748C1CECE9A99BE56 /* Pods_Accept.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9C7779084BCBF9D7E50ABD /* Pods_Accept.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		241DAF1E1E8F952900BD5E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		241DAF211E8F952900BD5E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		241DAF231E8F952900BD5E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE968E32D230326089BDF99 /* Pods-Accept.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accept.release.xcconfig"; path = "Pods/Target Support Files/Pods-Accept/Pods-Accept.release.xcconfig"; sourceTree = "<group>"; };
+		6F9C7779084BCBF9D7E50ABD /* Pods_Accept.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Accept.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8090B42C87B77D9D70E7F4E6 /* Pods-Accept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Accept/Pods-Accept.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB0A28748C1CECE9A99BE56 /* Pods_Accept.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				241DAF161E8F952900BD5E65 /* Accept */,
 				241DAF151E8F952900BD5E65 /* Products */,
+				E55AEA69B8209263CB7524C0 /* Pods */,
+				3F8842EA98C072F8034CF68B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Accept;
 			sourceTree = "<group>";
 		};
+		3F8842EA98C072F8034CF68B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F9C7779084BCBF9D7E50ABD /* Pods_Accept.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E55AEA69B8209263CB7524C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8090B42C87B77D9D70E7F4E6 /* Pods-Accept.debug.xcconfig */,
+				4AE968E32D230326089BDF99 /* Pods-Accept.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 241DAF261E8F952900BD5E65 /* Build configuration list for PBXNativeTarget "Accept" */;
 			buildPhases = (
+				AEC362AD0E17E677531AA188 /* [CP] Check Pods Manifest.lock */,
 				241DAF101E8F952900BD5E65 /* Sources */,
 				241DAF111E8F952900BD5E65 /* Frameworks */,
 				241DAF121E8F952900BD5E65 /* Resources */,
+				264089C83ECEA51646C0F063 /* [CP] Embed Pods Frameworks */,
+				B97B1DE8EAFB516E31C0C8A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		264089C83ECEA51646C0F063 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Accept/Pods-Accept-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEC362AD0E17E677531AA188 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B97B1DE8EAFB516E31C0C8A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Accept/Pods-Accept-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		241DAF101E8F952900BD5E65 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		241DAF271E8F952900BD5E65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8090B42C87B77D9D70E7F4E6 /* Pods-Accept.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HPGLGM5TWM;
@@ -276,6 +352,7 @@
 		};
 		241DAF281E8F952900BD5E65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE968E32D230326089BDF99 /* Pods-Accept.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HPGLGM5TWM;
