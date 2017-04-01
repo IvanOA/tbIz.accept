@@ -12,6 +12,7 @@ class MainVC: UIViewController{
 
     @IBOutlet var tableView: UITableView!
     
+    let a=3
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
