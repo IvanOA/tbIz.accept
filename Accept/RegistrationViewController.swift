@@ -10,9 +10,12 @@ import UIKit
 
 class RegistrationViewController: UIViewController {
 
+    @IBOutlet weak var bt_confirm: UIButton!
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +25,9 @@ class RegistrationViewController: UIViewController {
     }
     
 
+    @IBAction func bt_confirm_Action(_ sender: UIButton) {
+        performSegue(withIdentifier: "Registration", sender: self)
+    }
     /*
     // MARK: - Navigation
 

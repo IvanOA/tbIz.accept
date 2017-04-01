@@ -10,6 +10,8 @@ import UIKit
 
 class SaluteViewController: UIViewController {
 
+    @IBOutlet weak var bt_next: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +24,9 @@ class SaluteViewController: UIViewController {
     }
     
 
+    @IBAction func bt_next_Action(_ sender: UIButton) {
+        performSegue(withIdentifier: "Salute", sender: self)
+    }
     /*
     // MARK: - Navigation
 
