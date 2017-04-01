@@ -8,19 +8,35 @@
 
 import UIKit
 
-class PasswordViewController: UIViewController {
+class PasswordViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBOutlet weak var password_unconfirmed: UITextField!
     @IBOutlet weak var password_confirmed: UITextField!
     @IBOutlet weak var bt_confirm: UIButton!
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = false
         // Do any additional setup after loading the view.
+        password_confirmed.keyboardType=UIKeyboardType.numberPad
+        password_unconfirmed.keyboardType=UIKeyboardType.numberPad
+        password_unconfirmed.delegate=self
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(PasswordViewController.dismissKeybord)))
     }
 
+    func dismissKeybord()
+    {
+        password_unconfirmed.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        password_unconfirmed.resignFirstResponder()
+        return true
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
