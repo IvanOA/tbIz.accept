@@ -19,6 +19,7 @@
 		73DBE5EC1E8FAAEC00E9757E /* SaluteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBE5EB1E8FAAEC00E9757E /* SaluteViewController.swift */; };
 		73DBE5EE1E8FAC3100E9757E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBE5ED1E8FAC3100E9757E /* RegistrationViewController.swift */; };
 		73DBE5F01E8FAC5900E9757E /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBE5EF1E8FAC5900E9757E /* PasswordViewController.swift */; };
+		73DBE5F21E90451700E9757E /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBE5F11E90451700E9757E /* MyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		73DBE5EB1E8FAAEC00E9757E /* SaluteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaluteViewController.swift; sourceTree = "<group>"; };
 		73DBE5ED1E8FAC3100E9757E /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		73DBE5EF1E8FAC5900E9757E /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		73DBE5F11E90451700E9757E /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		8090B42C87B77D9D70E7F4E6 /* Pods-Accept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Accept/Pods-Accept.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				241DAF161E8F952900BD5E65 /* Accept */,
-				241DAF151E8F952900BD5E65 /* Products */,
 				E55AEA69B8209263CB7524C0 /* Pods */,
 				3F8842EA98C072F8034CF68B /* Frameworks */,
 			);
@@ -68,6 +69,7 @@
 				241DAF141E8F952900BD5E65 /* Accept.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		241DAF161E8F952900BD5E65 /* Accept */ = {
@@ -83,8 +85,10 @@
 				73DBE5EB1E8FAAEC00E9757E /* SaluteViewController.swift */,
 				73DBE5ED1E8FAC3100E9757E /* RegistrationViewController.swift */,
 				73DBE5EF1E8FAC5900E9757E /* PasswordViewController.swift */,
+				73DBE5F11E90451700E9757E /* MyCollectionViewCell.swift */,
 				241DAF2D1E8FEDB000BD5E65 /* users_data.json */,
 				241DAF2B1E8FEA7A00BD5E65 /* cards_data.json */,
+				241DAF151E8F952900BD5E65 /* Products */,
 			);
 			path = Accept;
 			sourceTree = "<group>";
@@ -233,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				241DAF1A1E8F952900BD5E65 /* ViewController.swift in Sources */,
+				73DBE5F21E90451700E9757E /* MyCollectionViewCell.swift in Sources */,
 				241DAF181E8F952900BD5E65 /* AppDelegate.swift in Sources */,
 				73DBE5EC1E8FAAEC00E9757E /* SaluteViewController.swift in Sources */,
 				241DAF2A1E8FA1F300BD5E65 /* LoadData.swift in Sources */,

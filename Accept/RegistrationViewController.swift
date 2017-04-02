@@ -11,12 +11,18 @@ import UIKit
 class RegistrationViewController: UIViewController {
 
     @IBOutlet weak var bt_confirm: UIButton!
-   
+    @IBOutlet weak var second_label: UILabel!
     @IBOutlet weak var card_number: UITextField!
+    @IBOutlet weak var holder_name: UITextField!
+    @IBOutlet weak var cvc: UITextField!
+    @IBOutlet weak var year: UITextField!
+    @IBOutlet weak var month: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
+        second_label.text="Привяжите карту Райффазен/nбанка"
+        
     }
 
     override func didReceiveMemoryWarning() {
